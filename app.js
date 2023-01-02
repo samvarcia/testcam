@@ -8,8 +8,8 @@ navigator.mediaDevices
     },
   })
   .then(function (stream) {
-    // Get a reference to a video element on the page
-
     // Set the srcObject of the video element to the stream from the camera
     videoElement.srcObject = stream;
+    videoElement.style.height = "100%";
+    videoElement.style.width = "100%";
   });
